@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="../img/preview.png" />
-  <link rel="mask-icon" type="" href="../img/preview.png" color="#111" />
+  <link rel="shortcut icon" type="image/x-icon" href="preview.png" />
+  <link rel="mask-icon" type="" href="preview.png" color="#111" />
   <title> Demo-Download</title>
   
   
@@ -198,7 +198,7 @@ background:white;
 display:none;
 }
 .demologo, a.demologo {
-    background: url(../img/preview.png)no-repeat left center;
+    background: url(preview.png)no-repeat left center;
     text-decoration: none;
     text-indent: -9999px;
     float: left;
@@ -219,7 +219,7 @@ right: 0;
 bottom: 0;
 width: 100%;
 height: 95%;
-background:url(../img/loader.gif)no-repeat center center;
+background:url(loader.gif)no-repeat center center;
 transition:all .4s ease-out;
 }
 #tab-demo {
@@ -234,7 +234,7 @@ z-index:99999;
 position:fixed;
 }
 .closebutton {
-    background: url(../img/close.png)no-repeat 15px 50%;
+    background: url(close.png)no-repeat 15px 50%;
     text-align: center;
     height: 50px;
     color: #999;
@@ -307,76 +307,6 @@ a.buybutton:hover {
 
 
   		
-				<script>
-
-//Pop-under window II- By JavaScript Kit
-//Credit notice must stay intact for use
-//Visit http://javascriptkit.com for this script
-// Visit http://www.star28.com/ for more code
-// Translated By http://soft.vip600.com/ & http://www.star28.com/
-
-// ضع هنا روابط المواقع التي ستفتح بشكل عشوائي في كل مرة
-var popunder=new Array()
-popunder[0]="http://maktabati.xoo.it/index.php"  // الموقع الأول 
-popunder[1]=""  // الموقع الثاني
-popunder[2]="http://www.m5zn.com/register.php?ref=148658"      // الموقع الثالث
-popunder[3]="https://userscloud.com/free189553.html"   // الموقع الرابع
-popunder[4]="http://hulkload.com/free17140.html"   // الموقع الخامس
-popunder[5]="http://islambooks.fulba.com/index.php"   // الموقع السادس
-popunder[6]="http://www.entireweb.com/free_submission/#alidz"   // الموقع السابع
-
-
-//specify popunder window features
-//set 1 to enable a particular feature, 0 to disable // حدد طول و عرض الصفحة المراد ظهورها
-var winfeatures="width=800,height=510,scrollbars=1,resizable=1,toolbar=1,location=1,menubar=1,status=1,directories=0"
-
-//Pop-under only once per browser session? (0=no, 1=yes)
-//Specifying 0 will cause popunder to load every time page is loaded
-var once_per_session=0
-
-///No editing beyond here required/////
-
-function get_cookie(Name) {
-  var search = Name + "="
-  var returnvalue = "";
-  if (document.cookie.length > 0) {
-    offset = document.cookie.indexOf(search)
-    if (offset != -1) { // if cookie exists
-      offset += search.length
-      // set index of beginning of value
-      end = document.cookie.indexOf(";", offset);
-      // set index of end of cookie value
-      if (end == -1)
-         end = document.cookie.length;
-      returnvalue=unescape(document.cookie.substring(offset, end))
-      }
-   }
-  return returnvalue;
-}
-
-function loadornot(){
-if (get_cookie('popunder')==''){
-loadpopunder()
-document.cookie="popunder=yes"
-}
-}
-
-function loadpopunder(){
-win2=window.open(popunder[Math.floor(Math.random()*(popunder.length))],"",winfeatures)
-win2.blur()
-window.focus()
-}
-
-if (once_per_session==0)
-loadpopunder()
-else
-loadornot()
-
-</script>
-
-
-
-
 
 
 <div class="footer">
