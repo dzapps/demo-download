@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title> Demo-Download</title>
+  
+  
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'/>
+
+
+
+
+
+
+
+<style id='page-skin-1' type='text/css'><!--
+/*
+/********************************
+///////////////kin
+//////////////////////////////////////////
+//                                            
+********************************/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:300;
+  background-color:lightblue;
+  color:#FFF;
+
+}
+.footer #button{
+	width:10px;
+	height:10px;
+	border: #727172 8px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 1em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
+
+/*  feed *//* CSS Breaking News Ticker */
+.bsd-ticker{display:block;text-align:center;margin:0 20px 20px 20px;padding:3px;background:#fefefe;border:1px solid rgba(0,0,0,0.1);border-left:5px solid #415471}
+.bsd-ticker>span{display:inline-block;background:#415471;padding:0;font:700 12px 'roboto',sans-serif}
+.bsd-ticker>span>a{color:#222;text-decoration:none}
+#ticker{height:46px;overflow:hidden;background:#ffffff;text-align:left}
+#ticker ul{padding:0;margin:0;list-style:none}
+#ticker ul li{height:46px;white-space:nowrap}
+#ticker ul li img{float:left;width:36px;height:36px;margin:5px 7px 5px 5px}
+#ticker ul li h3{margin:0;font:700 16px 'roboto',sans-serif}
+#ticker ul li h3 a{color:#666;text-decoration:none;line-height:26px!important}
+#ticker ul li .authorticker{font:400 12px 'roboto',sans-serif;line-height:21px!important;color:#666}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+//<![CDATA[
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
+    }
+    return (false);
+}
+window.onload = function() {
+ var url  = getQueryVariable("url");
+ var download  = getQueryVariable("download")
+var buy  = getQueryVariable("buy")
+ document.getElementById('view').src = url;
+ document.getElementById('dl').href = download;
+document.getElementById('buy').href = buy;
+};
+
+//]]>
+</script>
+
+
+
+
+<base target="_blank">
+
+<script type="text/javascript">
+    var restricted_domains = ['google.com','facebook.com',];
+    var user_id = 226818;
+</script>
+
+<script type="text/javascript" src="http://traidnt.net/api/arbah.js"></script>  
+</head>
+<body translate="no" >
+
+<div id='tab-demo'>
+<a class='demologo' href=' http://codepen.io/alidz/debug/JWQWVz'>Preview</a>
+  
+ <a class='adslogo' href='http://www.traidnt.net/link/index.html?referral=226818'></a> 
+  
+  
+  
+<a class='closebutton' href='javascript:void(0)' onclick='document.getElementById(&#39;tab-demo&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;view&#39;).style.top=&#39;0&#39;;document.getElementById(&#39;view&#39;).style.height=&#39;100%&#39;'>Remove Frame</a>
+<a class='dlbutton' href='' id='dl'>Download Free</a>
+
+</div>
+<iframe id='view'></iframe>
+<style>
+body {
+background:white;
+}
+</style>
+
+
+
+<style>
+
+#TEMPLATEISM-REDIRECTION{
+display:none;
+}
+.demologo, a.demologo {
+    background: url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/48/preview.png)no-repeat left center;
+    text-decoration: none;
+    text-indent: -9999px;
+    float: left;
+    width: 100px;
+    height: 32px;
+    background-size: 50px;
+    margin: 13px 9px 13px 20px;
+ 
+  }
+#view {
+padding: 0;
+margin: 0;
+border: 0;
+position: fixed;
+top: 50px;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 95%;
+background:url(http://2.bp.blogspot.com/-inJ_59r9FJ0/UuEXr4IQn0I/AAAAAAAAGWg/OSIKdAm4Wwg/s1600/loader.gif)no-repeat center center;
+transition:all .4s ease-out;
+}
+#tab-demo {
+width:100%;
+height:54px;
+top:0;
+left: 0;
+background:#262626;
+color:white;
+font:normal 13px Arial, sans-serif;
+z-index:99999;
+position:fixed;
+}
+.closebutton {
+    background: url(http://2.bp.blogspot.com/-yDP_V5EQ09U/UuC7diNnwYI/AAAAAAAAGVw/Hez_ZcpmFLE/s1600/close.png)no-repeat 15px 50%;
+    text-align: center;
+    height: 50px;
+    color: #999;
+    padding: 0px 20px 0px 35px;
+    line-height: 50px;
+    cursor: pointer;
+    color: white;
+    background-size: 11px;
+    float: right;
+}
+a.closebutton { color: #888; text-decoration: none; }
+
+.closebutton:hover {color:#fff}
+
+.dlbutton, a.dlbutton, a.buybutton {
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    line-height: 34px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    float: right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    background: #00ab6f;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+a.buybutton {
+    background: #3483D2!important;
+}
+
+.dlbutton:hover {
+    background: #019b65;
+}
+
+a.buybutton:hover {
+    background: #1974cf!important;
+}
+
+</style>
+
+  
+  
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-525dedf75e6f370e"></script>
+<script type="text/javascript"> var addthis_product = 'blg-1.0'; addthis.layers({ 'theme' : 'dark',
+'share' : { 'position' : 
+'right',
+'numPreferredServices' : 6
+}, 'follow' : {
+} }); </script>
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  
+  
+  <script>
+  
+  function getauthor(t){for(var e=0;e<t.length;e++)var i=t[e].name.$t;return i}function getmeta(t){var e=[];e[1]="Jan",e[2]="Feb",e[3]="Mar",e[4]="Apr",e[5]="May",e[6]="Jun",e[7]="Jul",e[8]="Aug",e[9]="Sep",e[10]="Oct",e[11]="Nov",e[12]="Dec";var i=t.substring(0,4),a=t.substring(5,7),n=t.substring(8,10),r=e[parseInt(a,10)]+" "+n+" "+i;return r}function bloggersstandticker(t){var e=document.querySelector("#ticker"),i=t.feed.entry,a="<ul id='ticket-wrapper-inner'>";if(i){for(var n=0;n<i.length;n++){for(var r=i[n],s=0;s<r.link.length;s++)if("alternate"==r.link[s].rel){var l=r.link[s].href;break}try{var o='<img src="'+r.media$thumbnail.url+'"/>'}catch(t){var o=""}var u=r.title.$t,c=getauthor(r.author),d=getmeta(r.published.$t);a+="<li>"+o+'<h3><a href="'+l+'">'+u+'</a></h3><div class="authorticker"><span>'+c+"</span> - <span>"+d+"</span></div></li>"}a+="</ul>",e.innerHTML=a}$("#ticker").bsdticker()}!function(t){var e={speed:700,pause:4e3,showItems:1,mousePause:!0,height:0,animate:!0,margin:0,padding:0,startPaused:!1},i={moveUp:function(t,e){i.animate(t,e,"up")},moveDown:function(t,e){i.animate(t,e,"down")},animate:function(e,i,a){var n=e.itemHeight,r=e.options,s=e.element,l=s.children("ul"),o="up"===a?"li:first":"li:last";s.trigger("bsdticker.beforeTick");var u=l.children(o).clone(!0);if(0<r.height&&(n=l.children("li:first").height()),n+=r.margin+2*r.padding,"down"===a&&l.css("top","-"+n+"px").prepend(u),i&&i.animate){if(e.animating)return;e.animating=!0,l.animate("up"===a?{top:"-="+n+"px"}:{top:0},r.speed,function(){t(l).children(o).remove(),t(l).css("top","0px"),e.animating=!1,s.trigger("bsdticker.afterTick")})}else l.children(o).remove(),l.css("top","0px"),s.trigger("bsdticker.afterTick");"up"===a&&u.appendTo(l)},nextUsePause:function(){var e=t(this).data("state"),i=e.options;e.isPaused||2>e.itemCount||a.next.call(this,{animate:i.animate})},startInterval:function(){var e=t(this).data("state"),a=this;e.intervalId=setInterval(function(){i.nextUsePause.call(a)},e.options.pause)},stopInterval:function(){var e=t(this).data("state");e&&(e.intervalId&&clearInterval(e.intervalId),e.intervalId=void 0)},restartInterval:function(){i.stopInterval.call(this),i.startInterval.call(this)}},a={init:function(n){a.stop.call(this);var r=jQuery.extend({},e);n=t.extend(r,n);var r=t(this),s={itemCount:r.children("ul").children("li").length,itemHeight:0,itemMargin:0,element:r,animating:!1,options:n,isPaused:n.startPaused?!0:!1,pausedByCode:!1};t(this).data("state",s),r.css({overflow:"hidden",position:"relative"}).children("ul").css({position:"absolute",margin:0,padding:0}).children("li").css({margin:n.margin,padding:n.padding}),isNaN(n.height)||0===n.height?(r.children("ul").children("li").each(function(){var e=t(this);e.height()>s.itemHeight&&(s.itemHeight=e.height())}),r.children("ul").children("li").each(function(){t(this).height(s.itemHeight)}),r.height((s.itemHeight+(n.margin+2*n.padding))*n.showItems+n.margin)):r.height(n.height);var l=this;n.startPaused||i.startInterval.call(l),n.mousePause&&r.bind("mouseenter",function(){!0!==s.isPaused&&(s.pausedByCode=!0,i.stopInterval.call(l),a.pause.call(l,!0))}).bind("mouseleave",function(){(!0!==s.isPaused||s.pausedByCode)&&(s.pausedByCode=!1,a.pause.call(l,!1),i.startInterval.call(l))})},pause:function(e){var i=t(this).data("state");if(i){if(2>i.itemCount)return!1;i.isPaused=e,i=i.element,e?(t(this).addClass("paused"),i.trigger("bsdticker.pause")):(t(this).removeClass("paused"),i.trigger("bsdticker.resume"))}},next:function(e){var a=t(this).data("state");if(a){if(a.animating||2>a.itemCount)return!1;i.restartInterval.call(this),i.moveUp(a,e)}},prev:function(e){var a=t(this).data("state");if(a){if(a.animating||2>a.itemCount)return!1;i.restartInterval.call(this),i.moveDown(a,e)}},stop:function(){t(this).data("state")&&i.stopInterval.call(this)},remove:function(){var e=t(this).data("state");e&&(i.stopInterval.call(this),e=e.element,e.unbind(),e.remove())}};t.fn.bsdticker=function(e){return a[e]?a[e].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof e&&e?void t.error("Method "+e+" does not exist on jQuery.bsdticker"):a.init.apply(this,arguments)}}(jQuery),$(function(){var t=document.createElement("script");t.src="http://sw-dz.blogspot.com"+$(".bsd-ticker").data("domain")+"/feeds/posts/summary?alt=json&callback=bloggersstandticker",t.type="text/javascript",document.getElementsByTagName("body")[0].appendChild(t)});
+  </script>
+
+
+
+
+  		
+				<script>
+
+//Pop-under window II- By JavaScript Kit
+//Credit notice must stay intact for use
+//Visit http://javascriptkit.com for this script
+// Visit http://www.star28.com/ for more code
+// Translated By http://soft.vip600.com/ & http://www.star28.com/
+
+// ضع هنا روابط المواقع التي ستفتح بشكل عشوائي في كل مرة
+var popunder=new Array()
+popunder[0]="http://maktabati.xoo.it/index.php"  // الموقع الأول 
+popunder[1]=""  // الموقع الثاني
+popunder[2]="http://www.m5zn.com/register.php?ref=148658"      // الموقع الثالث
+popunder[3]="https://userscloud.com/free189553.html"   // الموقع الرابع
+popunder[4]="http://hulkload.com/free17140.html"   // الموقع الخامس
+popunder[5]="http://islambooks.fulba.com/index.php"   // الموقع السادس
+popunder[6]="http://www.entireweb.com/free_submission/#alidz"   // الموقع السابع
+
+
+//specify popunder window features
+//set 1 to enable a particular feature, 0 to disable // حدد طول و عرض الصفحة المراد ظهورها
+var winfeatures="width=800,height=510,scrollbars=1,resizable=1,toolbar=1,location=1,menubar=1,status=1,directories=0"
+
+//Pop-under only once per browser session? (0=no, 1=yes)
+//Specifying 0 will cause popunder to load every time page is loaded
+var once_per_session=0
+
+///No editing beyond here required/////
+
+function get_cookie(Name) {
+  var search = Name + "="
+  var returnvalue = "";
+  if (document.cookie.length > 0) {
+    offset = document.cookie.indexOf(search)
+    if (offset != -1) { // if cookie exists
+      offset += search.length
+      // set index of beginning of value
+      end = document.cookie.indexOf(";", offset);
+      // set index of end of cookie value
+      if (end == -1)
+         end = document.cookie.length;
+      returnvalue=unescape(document.cookie.substring(offset, end))
+      }
+   }
+  return returnvalue;
+}
+
+function loadornot(){
+if (get_cookie('popunder')==''){
+loadpopunder()
+document.cookie="popunder=yes"
+}
+}
+
+function loadpopunder(){
+win2=window.open(popunder[Math.floor(Math.random()*(popunder.length))],"",winfeatures)
+win2.blur()
+window.focus()
+}
+
+if (once_per_session==0)
+loadpopunder()
+else
+loadornot()
+
+</script>
+
+
+
+
+
+
+<div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div id="cont">
+<div class="footer_center">
+	   <h3>Copyright © 2017 · All rights reserved</h3>
+<div class='bsd-ticker' data-domain=''>
+<div id='ticker'>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+  
+  
+  
+  
+
+</body>
+</html>
+ 
