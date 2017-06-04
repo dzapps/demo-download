@@ -580,10 +580,69 @@ $("#close").click(function() {
 
 	
 	
-	
-	<div id="h237">
+<style>
+    #h237 {
+        background-color: #fcfcfc;
+        opacity: .99;
+        display: table;
+        position: fixed!important;
+        position: absolute;
+        z-index: 9999!important;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        top: expression((t=document.documentElement.scrollTop?document.documentElement.scrollTop: document.body.scrollTop)+"px");
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 2% 0
+    }
+    
+    #h237 p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        color: #7a7a7a;
+        line-height: 30px;
+        text-decoration: none;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 auto
+    }
+    
+    #h237 p a {
+        background: #979797;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff!important;
+        line-height: initial;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        width: 100px;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 30px auto;
+        clear: both;
+        transition: all .3s ease-out
+    }
+    
+    #h237 p a:hover {
+        background: #662f8c;
+        color: #fff
+    }
+    
+    #h237~ * {
+        display: none
+    }
+</style>
+<div id="h237">
     <span>Mohon Aktifkan Javascript!<a href="http://www.enable-javascript.com/">Enable JavaScript</a></span>
-</div>
+</div>	
+
 <script>
     /*<![CDATA[*/
     window.document.getElementById("h237").parentNode.removeChild(window.document.getElementById("h237"));
@@ -714,14 +773,7 @@ $("#close").click(function() {
 </script>
 </div>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=135854313220588";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 	
 	
 	
