@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html >
+<?php require("/simphp.php"); ?>
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +9,7 @@
   <title> Demo-Downlaod URL Generator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  
+
 
   
 
@@ -206,6 +207,11 @@ height:100%;
      </form>
       <div class='answer'>
         <code id='result'>https://dzapps.github.io/demo-download/?url={{ cat }}<span v-if="label">&download={{ label }}</span>
+	
+		      </div>
+ <p class="hits"><?php echo $info; ?></p>
+
+		
         </code>
       </div>
     </div>
